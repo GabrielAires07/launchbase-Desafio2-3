@@ -1,0 +1,221 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  background: #7159c1;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+header div a {
+  text-decoration: none;
+  color: #ad9be5;
+  margin: 0 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+header div {
+  text-align: center;
+  position: relative;
+}
+
+header div a:hover {
+  color: white;
+  transition: color 300ms;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: none;
+}
+
+.cards {
+  max-width: 1000px;
+  margin: 0 4%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.card {
+  border-radius: 5px;
+  background-color: #282a36;
+  height: 520px;
+  width: 400px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500px;
+  line-height: 25px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.card_image img {
+ margin: 10% auto;
+}
+
+.card_content,
+.card_info {
+    padding: 45px 45px 45px 30px;
+    text-align: center;
+    align-items: center;
+    width: 72%;
+    margin: 0 auto;
+}
+
+
+.card_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-self: center;
+}
+
+.card_price {
+  padding: 5px 20px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  border: solid #7159c1 3px;
+  color: #7159c1;
+}
+
+.cards a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cards .card_starter::before {
+  border: solid 4px black;
+}
+
+.cards .card_starter:hover {
+  border: solid 4px #7159c1;
+  border-radius: 10px;
+  transition: all 0.3s ease 0s;
+  margin: 4px -4px -4px -4px;
+  box-shadow: 5px 10px 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card_launchbase:hover {
+  border: solid 4px #fd951f;
+  border-radius: 10px;
+  transition: all 0.3s ease 0s;
+  margin: 4px -4px -4px -4px;
+}
+
+.card_launchbase:hover .card_price {
+  border: solid 3px #fd951f;
+  transition: all 0.2s ease 0s;
+  color: #fd951f;
+}
+
+.card_gostack:hover {
+  border: solid 4px #04d361;
+  border-radius: 10px;
+  transition: all 0.3s ease 0s;
+  margin: 4px -4px -4px -4px;
+}
+
+.card_gostack:hover .card_price {
+  border: solid 3px #04d361;
+  transition: all 0.3s ease 0s;
+  color: #04d361;
+}
+
+/*====MODAL====*/
+
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+
+.modal {
+  background-color: #282a36;
+  width: 800px;
+  height: 600px;
+  margin: 5vh auto;
+  position: relative;
+  border-radius: 20px;
+  border: 3px solid #04d361;
+}
+
+.maximize {
+  background-color: #282a36;
+  width: 100%;
+  height: 100%;
+  margin: 5vh auto;
+  position: relative;
+  border-radius: 20px;
+  border: 3px solid #04d361;
+}
+
+
+.modal .close-modal {
+  color: white;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+  background-color: #282a36;
+}
+
+.modal .max {
+  color: white;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  cursor: pointer;
+  background-color: #282a36;
+}
+
+
+.modal .min {
+  color: white;
+  position: absolute;
+  margin-left: 24px;
+  top: 8px;
+  cursor: pointer;
+  background-color: #282a36;
+}
+
+.modal .min:hover {
+  color: #04d361;
+}
+
+.modal .max:hover {
+  color: #04d361;
+}
+
+.modal .close-modal:hover {
+  color: #04d361;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+iframe {
+  width: 95%;
+  height: 90%;
+  position: absolute;
+  top: 6%;
+  right: 2.5%;
+  border-radius: 10px;
+  border: 2px solid #7159c1;
+}
+
